@@ -13,5 +13,5 @@
     $dao = new PessoaDao();
     $cadastrar = $dao->cadastrar($pessoa);
 
-    header("location:/crud/controller/pessoa.php");
+    header("location:/wnep/view/pessoa.php");
 ?>

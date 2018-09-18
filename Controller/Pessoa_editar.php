@@ -11,7 +11,7 @@
         $validar = $dao->carrega($txtId);
 
         if(empty($validar)){
-            header("location:/crud/controller/pessoa.php?erro=NaoExiste");
+            header("location:/wnep/view/pessoa.php?erro=NaoExiste");
         }else{
 
             $pessoa = new Pessoa();
@@ -19,10 +19,10 @@
             $pessoa->setNome($txtNome);
             $pessoa->setEmail($txtEmail);
             $cadastrar = $dao->editar($pessoa);
-            header("location:/crud/controller/pessoa.php?Sucesso");
+            header("location:/wnep/view/pessoa.php?Sucesso");
         }     
 
     }else{
-        header("location:/crud/controller/pessoa.php?erro=FaltaParametro");
+        header("location:/wnep/view/pessoa.php?erro=FaltaParametro");
     }
 ?>
