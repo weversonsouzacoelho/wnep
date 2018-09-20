@@ -1,7 +1,7 @@
 <?php
 
-require_once  '../Config/Connection.php';
-require_once  '../Model/PessoaModel.php';
+require_once  $_SERVER['DOCUMENT_ROOT'].'/wnep/Config/Connection.php';
+require_once  $_SERVER['DOCUMENT_ROOT'].'/wnep/Model/PessoaModel.php';
 
 class PessoaDao{
     public function __construct(){ }

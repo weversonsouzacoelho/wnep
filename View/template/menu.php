@@ -13,7 +13,7 @@
                     Cadastro
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="/crud/controller/pessoa.php">Pessoa</a>
+                    <a class="dropdown-item" href="<?= base_url() ?>/pessoa.php">Pessoa</a>
                 </div>
             </li>
         </ul>

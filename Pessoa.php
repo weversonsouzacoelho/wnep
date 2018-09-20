@@ -1,6 +1,17 @@
-<?php include '../View/template/header.php'; ?>
-<?php include '../View/template/menu.php'; ?>
-<?php require_once '../DAO/PessoaDao.php'; ?>
+<?php 
+    /*
+        Arquivos necessários para execução 
+    */
+    require_once  $_SERVER['DOCUMENT_ROOT'].'/wnep/Config\Config.php';
+    require_once 'DAO/PessoaDao.php';
+
+    /*
+        TEMPLATE
+    */
+    include 'View/template/header.php'
+    include 'View/template/menu.php'; 
+    
+?>
 
 <h1>Pessoas</h1>
 
@@ -32,7 +43,7 @@
                             <div class="modal fade" id="editar<?=$p->getId(); ?>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
-                                        <form action="\wnep\controller\Pessoa_editar.php?id=<?=$p->getId(); ?>" method="post">
+                                        <form action="<?= base_url(); ?>controller\Pessoa_editar.php?id=<?=$p->getId(); ?>" method="post">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
@@ -102,4 +113,9 @@
     </div>
 </div>
 
-<?php include '../View/template/footer.php'; ?>
+<?php 
+    /*
+        TEMPLATE
+    */
+    include './View/template/footer.php'; 
+?>
