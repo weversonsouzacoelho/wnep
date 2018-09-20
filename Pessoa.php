@@ -8,7 +8,7 @@
     /*
         TEMPLATE
     */
-    include 'View/template/header.php'
+    include 'View/template/header.php';
     include 'View/template/menu.php'; 
     
 ?>
